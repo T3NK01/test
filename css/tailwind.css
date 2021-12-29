@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+
+.btn-teal {
+    @apply inline-block bg-teal-700 px-6 py-2 uppercase rounded-md shadow-lg text-sm text-white tracking-wider  font-semibold;
+}
+
+.btn-teal:hover {
+    @apply bg-teal-600;
+}
+.btn-teal:focus {
+    @apply shadow-outline;
+}
+
+.btn-teal:active {
+    @apply bg-teal-800;
+}
+.header {
+    height:400px;
+}
+.header .hero {
+    z-index: -10;
+}
+    
+
+.movie-card {
+    @apply flex flex-shrink-0;
+}
+ 
+.movie-card-link {
+    @apply relative block mx-2;
+}
+ 
+.movie-card-content {
+    @apply absolute inset-0 bg-gray-900 opacity-75 p-4 hidden flex-col justify-end text-white cursor-pointer;
+}
+ 
+.movie-card-title {
+    @apply text-lg mb-2;
+}
+ 
+.movie-card-text {
+    @apply leading-normal select-none;
+}
+
+.movie-card-image {
+
+}
+
+.trailer {
+    height: 300px;
+}
+
+.btn-primary {
+    @apply bg-transparent uppercase border-purple-800 text-blue-200 px-10 py-3 inline-block;
+}
+
+.btn-primary:hover {
+    @apply bg-blue-800 text-white cursor-pointer;
+}
+
+
+
+@screen md {
+    .btn-teal {
+        @apply text-lg;
+    }
+    .header{
+        height:650px;
+    }
+}
+@tailwind utilities;
