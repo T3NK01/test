@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=" dist/css/tailwind.css" />
+    <title>Stray Kids</title>
+  </head>
+  <body class="bg-black font-sans leading-normal tracking-normal">
+    <!-- Header start -->
+    <header class="header relative overflow-hidden">
+      <!-- Navbar start -->
+      <nav
+        class="flex flex-wrap items-center justify-between bg-gray-900 w-full p-6 z-10 top-0 bg-opacity-50"
+      >
+        <div class="flex flex-row items-center flex-shrink-0 text-white">
+          <img class="h-12 w-18" src="img/skz_everywhere.png" alt="" />
+          
+          
+        </div>
+        <!-- Menu toggle button -->
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="p-2 border rounded rounded-full text-gray-500 border-gray-500 hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <!-- Menu items -->
+        <div
+          id="nav-content"
+          class="hidden w-full pt-6 lg:flex lg:items-center lg:w-auto lg:block lg:pt-0"
+        >
+          <ul class="uppercase text-white lg:flex flex-1">
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 text-yellow-600 hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 text-yellow-600 hover:text-white"
+                >Intro</a
+              >
+            </li>
+            <li>
+              <a
+                href="game_html/game.html"
+                class="inline-block py-2 px-4 text-yellow-600 hover:text-white"
+                >Game</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-2 px-4 text-yellow-600 hover:text-white"
+                >Social Media</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+      <!-- Hero start -->
+      <div class="hero absolute inset-0 sm:hidden">
+        <img
+          src="img/stray_kids_group_photo.jpg"
+          class="w-full h-full object-cover object-center"
+          alt=""
+        />
+      </div>
+      <div class="hero absolute hidden inset-0 sm:block">
+        <video
+          src="img/SKZOO_1080p.mp4"
+          class="w-full h-full object-cover"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <!-- Hero end -->
+    </header>
+    <!-- Head end-->
+
+    <!-- Slider start -->
+    <!-- Navigation start -->
+    <div class="container my-6">
+      <ul class="flex text-gray-300 justify-center md:justify-start md:ml-24">
+        <li class="pr-2">TRACK</li>
+        <li class="pr-2">|</li>
+        <li class="text-orange-500 pr-2">ALBUM</li>
+      </ul>
+    </div>
+    <!-- Navigation end  -->
+    <!-- Previous button -->
+    <div class="container flex items-center mx-auto">
+      <button
+        class="h-16 w-16 text-gray-300 hidden md:block"
+        id="prev-btn"
+        type="button"
+      >
+        <svg
+          class="fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z"
+          />
+        </svg>
+      </button>
+
+      <!-- Cards -->
+      <div class="container flex flex-col items-center mx-auto mb-16 ">
+        <div
+          class="flex flex-col items-stretch justify-start space-y-6 md:flex-row md:overflow-hidden md:flex-no-wrap md:space-y-0"
+          id="container"
+        >
+          <!-- -------------------------------------------------------------- -->
+          <div class="movie-card">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex ">
+                <h3 class="movie-card-title">GO LIVE: GO生</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="movie-card-image h-64 w-64" src="img/go_live.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="movie-card">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex ">
+                <h3 class="movie-card-title">Step Out of Clé</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/step_out_of_cle.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer "
+              >
+                <h3 class="text-lg mb-2">IN LIFE: IN生</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/in_life.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">Clé 1 : MIROH</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/cle1_miroh.jpg" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">『ALL IN』</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/all_in.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">Clé: Levanter</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/cle_levanter.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">Clé 2: YelloW WooD</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/cle2_yellow_wood.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">I AM WHO?</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/IamWHO.jpg" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">I AM NOT</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/IamNOT.jfif" alt="" />
+            </a>
+          </div>
+          <!-- -------------------------------------------------------------- -->
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 bg-black opacity-75 p-4 hidden group-hover:flex flex-col justify-end text-white cursor-pointer"
+              >
+                <h3 class="text-lg mb-2">I AM You</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae pariatur atque eos libero doloribus minus, earum
+                  impedit voluptatibus ipsum hic.
+                </p>
+              </div>
+              <img class="h-64 w-64" src="img/IamYOU.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Next button -->
+      <button
+        class="h-16 w-16 text-gray-300 hidden md:block"
+        id="next-btn"
+        type="button"
+      >
+        <svg
+          class="fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- Slider end -->
+
+    <!-- About section start -->
+    <div class="container mx-auto py-8 text-white text-center">
+      <div class="text-gray-500 mb-4 text-base md:text-lg">
+        SKZ-RECORD <span>|</span> SKZ-PLAYER <span>|</span> SKZ-CODE
+      </div>
+      <h2 class="text-2xl md:text-5xl font-sans font-bold mb-4">
+        About Stray Kids
+      </h2>
+      <p class="max-w-md opacity-75 mx-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur
+        odit iste minima! Aperiam dicta rem fugiat! Minima magni cum nobis odio
+        temporibus! Deserunt iste debitis quo molestiae. Reprehenderit qui
+        labore rerum, veniam eligendi ea veritatis eius sit sed eum!
+      </p>
+      <a href="#" class="text-orange-500 my-4 inline-block">See more +</a>
+    </div>
+    <!-- About section end -->
+
+    <!-- New trailer section start -->
+    <div class="trailer relative flex flex-wrap items-center">
+      <div class="absolute inset-0 w-full h-full opacity-75">
+        <img
+          src="img/example.JPG"   
+          class="object-cover w-full h-full"
+          alt="black-widow"
+        /> <!--tun udahgui hesgiin zurag-->
+      </div>
+      <div
+        class="container mx-auto text-center text-white w-full flex flex-wrap z-10"
+      >
+        <h3
+          class="text-3xl font-sans font-bold mb-4 w-full leading-tight md:text-5xl"
+        >
+          Coming Soon
+        </h3>
+        <div class="mx-auto mb-8 md:mb-16">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center text-white w-auto hover:opacity-60"
+          >
+            <svg
+              class="fill-current text-white w-8 h-8 mx-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+            >
+              <title>ic_play_circle_outline_48px</title>
+              <path
+                d="M20 33l12-9-12-9v18zm4-29C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"
+              ></path>
+            </svg>
+            <span class="border-b border-white pb-1">PLAY ALL</span>
+          </a>
+        </div>
+        <div class="w-full">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center text-white border bg-transparent px-8 py-3 rounded hover:bg-white hover:text-black"
+            >All Music Videos +</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- New trailer section end -->
+
+    <!-- Footer start -->
+    <footer class="container mx-auto text-white py-16 px-6 md:px-16">
+      <div class="border-l border-white pl-4 md:pl-8">
+        <p>YOU MAKE STRAY KIDS STAY</p>
+        <h3 class="text-3xl font-sans font-semibold mb-6 md:text-5xl">
+          You can STAY
+        </h3>
+        <form action="#">
+          <div class="flex items-center justify-start flex-wrap">
+            <input
+              type="email"
+              class="border text-white bg-transparent py-3 leading-tight  px-4 w-full md:w-1/3 mr-4 mb-4 md:mb-0"
+              placeholder="И-мэйл хаягаа бичнэ үү."
+            />
+            <input type="submit" class="btn-primary " value="Sign in" />
+          </div>
+        </form>
+      </div>
+
+      <div class="flex items-center justify-start flex-wrap mt-10">
+        <p class="text-lg opacity-50 mr-8">
+          &copy; 2021 STRAY KIDS. All rights reserved.
+        </p>
+        <div class="flex items-center justify-start">
+          <a href="">
+            <svg
+              class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Instagram icon</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <title>YouTube icon</title>
+              <path
+                d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Vimeo icon</title>
+              <path
+                d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Facebook icon</title>
+              <path
+                d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Twitter icon</title>
+              <path
+                d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scripts -->
+    <script>
+      //Javascript to toggle the menu
+      document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+    </script>
+
+    <!-- Slider controls -->
+    <script>
+      var button_next = document.getElementById("next-btn");
+      button_next.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "right", 25, 300, 50);
+      };
+
+      var button_prev = document.getElementById("prev-btn");
+      button_prev.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "left", 25, 300, 50);
+      };
+
+      function sideScroll(element, direction, speed, distance, step) {
+        scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+          if (direction == "left") {
+            element.scrollLeft -= step;
+          } else {
+            element.scrollLeft += step;
+          }
+          scrollAmount += step;
+          if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+          }
+        }, speed);
+      }
+    </script>
+  </body>
+</html>
