@@ -1,2 +1,0 @@
-# Bolor-Erdene
-# Bolor-Erdene
